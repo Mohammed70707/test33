@@ -1,0 +1,56 @@
+/* my name :mohammed awad musa
+class:second class
+Department:computar */ 
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+
+	
+	{
+	string name;
+	int number;
+	//prepare the two variables name and number to store user infomation
+	
+
+	cout <<"what is your name? ";
+	cin>> name;
+	cout<<"how is university ID? ";
+	cin>>number
+	cout<<your name <<your university ID <<andl;//display the information that the user will enter in an orderly manner
+	double grade;// the result can a float
+	string result;
+	str A;B;C;
+	//	A=control
+//	T=Telecome
+//	C=computer
+	
+if(grade A)	
+result="control";
+else if (grade T)
+ result="Telecome";
+ else(grade C)
+ result="computer";
+
+ 	double grade;
+	string result;
+	//>=90 A
+	//>=80 B
+	//>=70 C
+	//>=60 D
+	//>=50 F
+	if(grade>=90)
+	result = "A";
+	else if (grade>=80)
+	result ="B";
+	else if (grade>=70)
+	result ="C";
+	else if (grade>=60)
+	result = "D";
+	else result = "F";
+	 cout<<result<<endl;
+    return 0 ;
+
+
+} 
