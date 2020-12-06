@@ -1,0 +1,97 @@
+
+/* My name: Mohammed Awad Musa
+Class : second 
+Department:computer
+*/
+
+
+#include <iostream>
+#include <cmath>
+#include <algorithm>
+using namespace std;
+
+class CChape{
+	protected:
+		int length , hieght ,width ,Base ,cutting arc length , lengh of the side,largest axis ,smaller axis,radius;
+		public:
+			void set_values ( int a, int b){	
+					width = a ; hieght = b;
+			
+			}		
+}; 
+class CPolygon : public CChape {  
+public:
+	int area(){return (width * length);
+	}
+    int perimeter(){return ((length+ width )/2);
+    
+	}	
+};
+class CTringle: public CChape {
+	public:
+		int area (){return ( 1/2(Base*hieght) );}
+		int perimeter(){return (lengh of the side * 3);
+		}
+		
+};
+class CRectangle : public CChap{
+	public : 
+	int area() {return (width * length);}
+	int perimeter (){return (2(lenght * width));
+	}
+	
+};
+class CSquare : public CChap{
+	public :
+		int area (){return (width * length);
+		}
+		int perimeter (){return (Base *  4);
+		}
+};
+class CEllipse : public CChap {
+	public :
+		int area(){return (radius largest axis * radius smaller axis);
+		}
+		int perimeter (){return (2*3.14*width*hieght);
+		}
+};
+class CCircle : public CChap {
+	public :
+		int area (){return (1/2* 3.14*(redius*2) );
+		}
+		int perimeter (){return (2*3.14*redius);
+		
+		}
+};
+void main(){
+	
+	CPolygon Poly;
+	CTringle Trai;
+	CRectangle Rect;
+	CSquare Squa;
+	CEllipse Elli;
+	CCircle Circ;
+	CChap *m1,*m2,*m3,*m4,*m5,*m6;
+	m1=Poly;	
+	m2=Trai;
+	m3=Rect;
+	m4=Squr;
+	m5=Elli;
+	m6=Circ;
+	m1->set_values(3,  4);
+		m2->set_values(3,  4);
+			m3->set_values(3,  4);
+				m4->set_values(3,  4);
+					m5->set_values(3,  4);
+						m6->set_values(3,  4);
+						
+	cout<<Poly.area()<<endl;			
+		cout<<Trai.area()<<endl;		
+			cout<<Rect.area()<<endl;		
+				cout<<Squa.area()<<endl;		
+					cout<<	Elli.area()<<endl;
+								cout<<	Circ.area()<<endl;	
+								
+return 0;									
+					
+}
